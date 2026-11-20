@@ -23,7 +23,7 @@ export const projects = [
     roles: ['Producer', 'Director', 'Editor'],
     media: {
       hero: still('/media/peter-labor-selection.jpg', 'Colectivo project media'),
-      gallery: [still('/media/peter-labor-selection.jpg', 'Colectivo project media, frame one')],
+      gallery: [],
     },
   },
   { slug: 'ups-part-timer', title: 'UPS $25 Part-Timer Campaign', category: 'Labor', roles: [], media: unassignedMedia('UPS $25 Part-Timer Campaign') },
