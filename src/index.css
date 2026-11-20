@@ -366,7 +366,8 @@ a {
 
 .landing {
   height: 100vh;
-  height: 100dvh;
+  /* Keep panels stable while mobile browser controls show or hide. */
+  height: 100svh;
   padding: 86px 16px 16px;
 }
 
