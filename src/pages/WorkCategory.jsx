@@ -35,7 +35,7 @@ export function WorkCategory() {
               <Link href={`/project/${project.slug}`} className="block">
                 <Thumbnail project={project} overlay="project" className="category-project__media" aspectRatio="16 / 10" />
                 <div className="category-project__caption">
-                  {project.clientOutlet ? <p>{project.clientOutlet}</p> : null}
+                  {/* {project.clientOutlet ? <p>{project.clientOutlet}</p> : null} */}
                 </div>
               </Link>
             </Reveal>

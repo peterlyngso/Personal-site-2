@@ -15,7 +15,7 @@ export function Thumbnail({ project, media = project.media.previewLoop || projec
       {overlay === 'project' && (
         <div className="project-overlay">
           <span className="project-overlay__title">{project.title}</span>
-          <span className="project-overlay__category">{project.category}</span>
+          {/* <span className="project-overlay__category">{project.category}</span> */}
         </div>
       )}
     </div>

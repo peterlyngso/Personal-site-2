@@ -81,7 +81,7 @@ export function ProjectSlug() {
         <Reveal className="case-study__header">
           <div className="case-study__eyebrow">
             <Link href={`/work/${project.category}`}>{project.category}</Link>
-            <span>Case study</span>
+            {/* <span>Case study</span> */}
           </div>
           <h1 className="case-study__title">{project.title}</h1>
         </Reveal>
