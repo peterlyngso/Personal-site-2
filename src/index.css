@@ -884,8 +884,6 @@ a {
 
   .door-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: repeat(3, minmax(0, 1fr));
     gap: 5px;
     height: 100%;
     min-height: 0;
@@ -1024,5 +1022,31 @@ a {
 
   .about-page__credit p {
     text-align: left;
+  }
+}
+
+/* Choose the homepage arrangement by screen shape, not navigation width. */
+@media (max-aspect-ratio: 1 / 1) {
+  html:has(.landing),
+  body:has(.landing) {
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
+  .portfolio-shell:has(.landing) {
+    min-height: 0;
+  }
+
+  .landing {
+    position: fixed;
+    inset: 0;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+
+  .door-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(3, minmax(0, 1fr));
   }
 }
