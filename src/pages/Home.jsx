@@ -13,7 +13,6 @@ export function Home() {
     <>
       <SEO title="Selected Work" />
       <main className="landing">
-        <div className="landing__marker">Selected work / 01—03</div>
         <div className="door-grid">
           {homeCuration.doors.map((door, index) => {
             const project = projects.find((item) => item.slug === door.projectSlug);
@@ -28,13 +27,12 @@ export function Home() {
           })}
         </div>
 
-        <section className="selected-work" aria-labelledby="selected-work-heading">
-          <div className="section-marker" id="selected-work-heading">A selection</div>
+        <section className="selected-work" aria-label="Selected projects">
           <div className="mosaic">
             {selectedProjects.map((project, index) => (
               <Reveal key={project.slug} delay={(index % 2) * 0.08} className="mosaic__item">
                 <Link href={`/project/${project.slug}`} className="block">
-                  <Thumbnail project={project} overlay="project" className="mosaic__media" />
+                  <Thumbnail project={project} overlay="project" className="mosaic__media" aspectRatio="16 / 10" />
                 </Link>
               </Reveal>
             ))}

@@ -33,9 +33,8 @@ export function WorkCategory() {
           {categoryProjects.map((project, index) => (
             <Reveal key={project.slug} delay={(index % 2) * 0.08} className="category-project">
               <Link href={`/project/${project.slug}`} className="block">
-                <Thumbnail project={project} overlay="project" className="category-project__media" />
+                <Thumbnail project={project} overlay="project" className="category-project__media" aspectRatio="16 / 10" />
                 <div className="category-project__caption">
-                  <h2>{project.title}</h2>
                   {project.clientOutlet ? <p>{project.clientOutlet}</p> : null}
                 </div>
               </Link>
