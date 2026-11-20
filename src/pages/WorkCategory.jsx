@@ -27,7 +27,7 @@ export function WorkCategory() {
       <main className={`category-page category-page--${category.toLowerCase()}`}>
         <Reveal className="category-heading">
           <h1>{category}</h1>
-          <p>{categoryProjects.length} projects<br />Selected work</p>
+          {/* <p>{categoryProjects.length} projects<br />Selected work</p> */}
         </Reveal>
         <div className="category-list">
           {categoryProjects.map((project, index) => (

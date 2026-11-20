@@ -27,7 +27,7 @@ export function Home() {
           })}
         </div>
 
-        <section className="selected-work" aria-label="Selected projects">
+        {/* <section className="selected-work" aria-label="Selected projects">
           <div className="mosaic">
             {selectedProjects.map((project, index) => (
               <Reveal key={project.slug} delay={(index % 2) * 0.08} className="mosaic__item">
@@ -37,7 +37,7 @@ export function Home() {
               </Reveal>
             ))}
           </div>
-        </section>
+        </section> */}
       </main>
     </>
   );

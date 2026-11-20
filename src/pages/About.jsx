@@ -5,11 +5,11 @@ import { SEO } from '../components/SEO';
 export function About() {
   return (
     <>
-      <SEO title="About / Credits" />
+      <SEO title="About" />
       <main className="about-page">
         <Reveal className="about-page__intro">
-          <p className="case-study__eyebrow">About / credits</p>
-          <h1>Peter<br />Lyngso</h1>
+          <p className="case-study__eyebrow">About</p>
+          {/* <h1>Peter<br />Lyngso</h1> */}
           <p className="about-page__bio">
             Filmmaker and media strategist whose work sits inside labor movements,
             political campaigns, and documentary reporting.

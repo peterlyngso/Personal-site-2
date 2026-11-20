@@ -6,7 +6,7 @@ const links = [
   { href: '/work/Labor', label: 'Labor' },
   { href: '/work/Politics', label: 'Politics' },
   { href: '/work/Documentary', label: 'Documentary' },
-  { href: '/about', label: 'About / Credits' },
+  { href: '/about', label: 'About' },
 ];
 
 export function Navigation() {
