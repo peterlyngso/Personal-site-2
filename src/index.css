@@ -308,7 +308,7 @@ a {
 
 .media-frame--door {
   height: 100%;
-  min-height: 510px;
+  min-height: 0;
 }
 
 .door-overlay {
@@ -365,8 +365,9 @@ a {
 }
 
 .landing {
-  min-height: 100dvh;
-  padding: 86px 16px 22px;
+  height: 100vh;
+  height: 100dvh;
+  padding: 86px 16px 16px;
 }
 
 .landing__marker {
@@ -392,21 +393,22 @@ a {
 .door-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: minmax(0, 1fr);
   gap: 6px;
-  height: calc(100dvh - 122px);
-  min-height: 570px;
-  max-height: 930px;
-  max-width: 1600px;
+  height: 100%;
+  min-height: 0;
   margin: 0 auto;
 }
 
 .door-link {
   display: block;
   min-width: 0;
+  min-height: 0;
   height: 100%;
 }
 
 .door-link .media-frame {
+  width: 100%;
   height: 100%;
 }
 
@@ -816,7 +818,7 @@ a {
   }
 
   .landing {
-    padding: 82px 10px 20px;
+    padding: 82px 10px 10px;
   }
 
   .landing__marker {
@@ -825,11 +827,11 @@ a {
 
   .door-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(3, minmax(0, 1fr));
     gap: 5px;
-    height: min(42dvh, 380px);
-    min-height: 250px;
-    max-height: none;
+    height: 100%;
+    min-height: 0;
   }
 
   .door-link,
